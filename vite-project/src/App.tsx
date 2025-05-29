@@ -1,4 +1,5 @@
 import './App.css'
+import FindProperties from './components/FindProperties'
 import Guide from './components/Guide'
 import HomesList from './components/HomesList'
 import Navbar from './components/Navbar'
@@ -7,17 +8,21 @@ import Search from './components/Search'
 function App() {
   return (
     <>
-      <main className='hero-container'>
-        <img src="/hero-image.jpg" alt="Hero Background" className="hero-image" />
-        <div className="navbar-wrapper">
+      {/* Hero Section */}
+      <section className='hero-section'>
+        <img src="/hero-image.png" alt="Hero" className="hero-image" />
+        <div className="overlay">
           <Navbar />
-        </div>
-        <div className="guide-wrapper">
           <Guide />
+          <Search />
         </div>
-        <Search />
-        <HomesList/>
-      </main>
+      </section>
+
+      {/* Homes Section */}
+      <HomesList />
+
+      {/* Find Properties section */}
+      <FindProperties />
     </>
   )
 }
