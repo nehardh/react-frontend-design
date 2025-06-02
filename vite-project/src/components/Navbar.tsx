@@ -1,5 +1,4 @@
 import { CiUser, CiPhone } from "react-icons/ci";
-import { FaHome } from "react-icons/fa";
 
 const Navbar = () => {
   const navItems = [
@@ -15,9 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
         <div className="navbar-wrapper">
             <div className="navbar-left">
-                <FaHome />
-                {/* <img src="/logo.svg" alt="logo" className="logo-icon" /> */}
-                <span className="logo-text">JustHome</span>
+                <img src="/logo.svg" alt="" />
             </div>
 
             <div className="navbar-center">
@@ -41,7 +38,6 @@ const Navbar = () => {
             </div>
         </div>
     </nav>
-
   );
 };
 

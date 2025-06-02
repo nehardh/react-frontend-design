@@ -2,32 +2,32 @@ const cityData = [
   {
     name: "New York",
     properties: 8,
-    image: "/images/new-york.jpg",
+    image: "/findProperties/1.svg",
   },
   {
     name: "Chicago",
     properties: 2,
-    image: "/images/chicago.jpg",
+    image: "/findProperties/2.svg",
   },
   {
     name: "Los Angeles",
     properties: 1,
-    image: "/images/los-angeles.jpg",
+    image: "/findProperties/3.svg",
   },
   {
     name: "San Diego",
     properties: 0,
-    image: "/images/san-diego.jpg",
+    image: "/findProperties/4.svg",
   },
   {
     name: "Florida",
     properties: 3,
-    image: "/images/florida.jpg",
+    image: "/findProperties/5.svg",
   },
   {
     name: "Miami",
     properties: 2,
-    image: "/images/miami.jpg",
+    image: "/findProperties/6.svg",
   },
 ];
 
@@ -42,11 +42,8 @@ const FindProperties = () => {
           <div
             key={index}
             className={`city-card ${index === 0 || index === 5 ? "highlighted" : ""}`}
+            style={{ backgroundImage: `url(${city.image})` }}
           >
-            <div className="overlay-properties">
-              <span className="properties">{city.properties} {city.properties === 1 ? "Property" : "Properties"}</span>
-              <h3 className="city-name">{city.name}</h3>
-            </div>
           </div>
         ))}
       </div>

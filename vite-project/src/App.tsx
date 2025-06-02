@@ -8,11 +8,11 @@ import Search from './components/Search'
 function App() {
   return (
     <>
+      <Navbar />
       {/* Hero Section */}
       <section className='hero-section'>
-        <img src="/hero-image.png" alt="Hero" className="hero-image" />
+        <img src="/hero-image.jpg" alt="Hero" className="hero-image" />
         <div className="overlay">
-          <Navbar />
           <Guide />
           <Search />
         </div>
